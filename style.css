@@ -24,7 +24,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-size: 20px;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .title{
@@ -269,7 +270,7 @@ body{
 
 /* Responsividade */
 
-@media (max-width: 999px){
+@media (max-width: 1024px){
 
     body{
         overflow-x: hidden;
@@ -378,9 +379,9 @@ body{
 
     .textService{
         grid-template: 1fr 1fr / 1fr 1fr;
-        column-gap: 40px;
+        column-gap: 30px;
         row-gap: 50px;
-        width: 90%;
+        width: 100%;
         height: 100%;
         align-items: flex-start;
         margin-left: 0px;
@@ -450,6 +451,47 @@ body{
 
 }
 
+@media (max-width: 500px){
+ 
+/* entrada */
+
+    .mainHeader{
+        font-size: 2.2rem;
+        box-sizing: border-box;
+    }
+    
+    .textHeader{
+        font-size: 1.9rem;
+    }
+
+/* Títulos */
+.title{
+    font-size: 2.1rem;
+}
+
+/* serviços */
+    #servicos{
+        box-sizing: border-box;
+    }
+
+    .textService{
+        box-sizing: border-box;
+    }
+
+    .textService div{
+        box-sizing: border-box;
+    }
+
+    .textService h3{
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+    .textService p{
+        box-sizing: border-box;
+        font-size: 0.8em;
+    }
+
+}
 
 
 
